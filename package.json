@@ -36,7 +36,7 @@
   "name": "react-native-nested-stylesheets",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siemiatj/react-native-nested-stylesheets.git"
+    "url": "https://github.com/siemiatj/react-native-nested-stylesheets.git"
   },
   "scripts": {
     "build": "webpack --colors --config ./webpack.config.js"
