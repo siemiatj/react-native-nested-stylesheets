@@ -1,23 +1,9 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "react-native-nested-stylesheet",
-        "scope": null,
-        "escapedName": "react-native-nested-stylesheet",
-        "name": "react-native-nested-stylesheet",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/sasklacz/Work/JS2/app/src/styles"
-    ]
-  ],
   "author": {
     "name": "Kuba Siemiatkowski <kuba@saskla.cz>"
   },
   "bugs": {
-    "url": "https://github.com/pjjanak/react-native-nested-stylesheets/issues"
+    "url": "https://github.com/siemiatj/react-native-nested-stylesheets/issues"
   },
   "dependencies": {
     "react-native": "^0.42.2"
@@ -25,29 +11,20 @@
   "description": "Nestable stylesheets for react-native.",
   "devDependencies": {},
   "directories": {},
-  "homepage": "https://github.com/pjjanak/react-native-nested-stylesheets",
+  "homepage": "https://github.com/siemiatj/react-native-nested-stylesheets",
   "keywords": [
-    "react-component",
-    "react-native",
     "react",
-    "ios",
-    "style",
+    "react-native",
     "stylesheet",
-    "react native"
+    "stylesheets",
+    "css"
   ],
   "license": "MIT",
-  "main": "./src/NestedStyleSheet.js",
-  "maintainers": [
-    {
-      "name": "pjjanak",
-      "email": "pjjanak@gmail.com"
-    }
-  ],
-  "name": "react-native-nested-stylesheet",
-  "readme": "ERROR: No README data found!",
+  "main": "build/index.js",
+  "name": "react-native-nested-stylesheets",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pjjanak/react-native-nested-stylesheets.git"
+    "url": "git+https://github.com/siemiatj/react-native-nested-stylesheets.git"
   },
   "scripts": {},
   "version": "0.0.1"
