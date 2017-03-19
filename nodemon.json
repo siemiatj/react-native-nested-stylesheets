@@ -1,0 +1,8 @@
+{
+  "verbose": false,
+  "watch": [
+    "src/stylesheet.js",
+    "src/stylesheet_validation.js",
+  ],
+  "exec": "npm run build"
+}
