@@ -1,7 +1,7 @@
 'use strict';
 
-import StyleSheetRegistry from 'react-native';
-import StyleSheetValidation from 'react-native';
+import StyleSheetValidation from 'react-native/Libraries/StyleSheet/StyleSheetValidation';
+import ReactNativePropRegistry from 'react-native/Libraries/Renderer/src/renderers/native/ReactNativePropRegistry';
 import NestedStyleSheetValidation from './stylesheet_validation';
 
 export default class NestedStyleSheet {
@@ -12,13 +12,14 @@ export default class NestedStyleSheet {
       const styleObjKeys = Object.keys(styleObj);
 
       if (Object.prototype.toString.call(styleObj[styleObjKeys[0]]) === '[object Object]') {
-        NestedStyleSheetValidation.validateIsNestedStyle(styleObj);
+        NestedStyleSheetValidation.validateNestedStyle(styleObj);
         result[key] = NestedStyleSheet.create(styleObj);
       } else {
         StyleSheetValidation.validateStyle(key, obj);
-        result[key] = StyleSheetRegistry.registerStyle(styleObj);
+        result[key] = ReactNativePropRegistry.registerStyle(styleObj);
       }
     }
+
     return result;
   }
 }
