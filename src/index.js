@@ -16,7 +16,7 @@ export default class NestedStyleSheet {
         result[key] = NestedStyleSheet.create(styleObj);
       } else {
         StyleSheetValidation.validateStyle(key, obj);
-        result[key] = ReactNativePropRegistry.registerStyle(styleObj);
+        result[key] = ReactNativePropRegistry.register(styleObj);
       }
     }
 
