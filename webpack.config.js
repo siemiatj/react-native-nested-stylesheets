@@ -2,8 +2,11 @@ const path = require('path');
 const PATHS = {
   build: path.resolve(__dirname, 'build'),
 };
+const nodeExternals = require('webpack-node-externals');
 
 const config = {
+  target: 'node',
+  externals: [nodeExternals()],
   entry: {
     index: './src/index.js',
   },
@@ -18,7 +21,7 @@ const config = {
         test: /\.js$/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'react', 'stage-0'],
+          presets: ['react-native'],
         },
         exclude: path.join(__dirname, '/node_modules/'),
       },
