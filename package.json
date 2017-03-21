@@ -1,14 +1,11 @@
 {
-  "author": {
-    "name": "Kuba Siemiatkowski <kuba@saskla.cz>"
-  },
-  "bugs": {
-    "url": "https://github.com/siemiatj/react-native-nested-stylesheets/issues"
-  },
+  "name": "react-native-nested-stylesheets",
+  "version": "0.0.1",
+  "description": "Nested react-native styles",
+  "main": "build/bundle.js",
   "dependencies": {
     "webpack": "^2.2.1"
   },
-  "description": "Nestable stylesheets for react-native.",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.24.0",
@@ -20,24 +17,30 @@
     "eslint-config-airbnb": "^14.1.0",
     "webpack-node-externals": "^1.5.4"
   },
-  "directories": {},
-  "homepage": "https://github.com/siemiatj/react-native-nested-stylesheets",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --colors --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siemiatj/react-native-nested-stylesheets.git"
+  },
   "keywords": [
     "react",
     "react-native",
     "stylesheet",
     "stylesheets",
-    "css"
+    "css",
+    "scss"
   ],
+  "author": {
+    "name": "Kuba Siemiatkowski",
+    "email": "kuba@saskla.cz",
+    "url": "https://saskla.cz"
+  },
   "license": "MIT",
-  "main": "build/bundle.js",
-  "name": "react-native-nested-stylesheets",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/siemiatj/react-native-nested-stylesheets.git"
+  "bugs": {
+    "url": "https://github.com/siemiatj/react-native-nested-stylesheets/issues"
   },
-  "scripts": {
-    "build": "webpack --colors --config ./webpack.config.js"
-  },
-  "version": "0.0.1"
+  "homepage": "https://github.com/siemiatj/react-native-nested-stylesheets#readme"
 }
