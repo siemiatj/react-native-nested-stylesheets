@@ -1,7 +1,7 @@
 'use strict';
 
 import StyleSheetValidation from 'react-native/Libraries/StyleSheet/StyleSheetValidation';
-import ReactNativePropRegistry from 'react-native/Libraries/Renderer/src/renderers/native/ReactNativePropRegistry';
+import ReactNativePropRegistry from 'react-native/Libraries/Renderer/shims/ReactNativePropRegistry';
 import NestedStyleSheetValidation from './stylesheet_validation';
 
 export default class NestedStyleSheet {
